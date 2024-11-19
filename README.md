@@ -1,1 +1,2 @@
-# responsi
+Geoportal: Data Kesehatan Wilayah Bogor 
+Merupakan aplikasi web yang dirancang untuk memvisualisasikan data kesehatan di wilayah Bogor, dengan fitur utama berupa peta interaktif yang menampilkan lokasi rumah sakit, tabel data yang berisi informasi detail rumah sakit, serta grafik distribusi rumah sakit di berbagai wilayah Bogor. Aplikasi ini dibangun dengan menggunakan HTML5, CSS3, JavaScript, Leaflet.js untuk peta interaktif, Chart.js untuk grafik distribusi, serta PHP dan MySQL untuk backend dan penyimpanan data. Data rumah sakit diperoleh dari direktori kesehatan lokal dan disimpan dalam database MySQL, sementara peta menggunakan OpenStreetMap sebagai sumber peta dasar.
