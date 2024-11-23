@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to SAHABAT</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+/* Menambahkan background image pada section dengan class .bg-light */
+.bg-light {
+    background-image: url('img/bghealth.jpg'); /* Ganti dengan path gambar yang sesuai */
+    background-size: cover; /* Agar gambar menutupi seluruh area */
+    background-position: center; /* Agar gambar terpusat */
+    background-attachment: fixed; /* Agar gambar tetap di tempat saat scroll */
+}
+
+/* Custom CSS for pink theme */
+.bg-pink {
+    background-color: rgba(255, 179, 198, 0.9) !important;
+}
+
+.btn-light {
+    background-color: #ffe0f0;
+    color: #ff66b2;
+}
+
+.btn-light:hover {
+    background-color: #ff99cc;
+}
+
+footer {
+    background-color: rgba(255, 179, 198, 0.9);
+}
+
+h2, h5 {
+    color: #bc0061;
+}
+
+h1 {
+  color: #f8f5f7;  
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card-body {
+    background-color: #ffe0f0;
+}
+
+/* Uniform card height */
+.feature-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-card .card-body {
+    flex-grow: 1;
+}
+
+</style>
+</head>
+<body class="bg-light">
+
+    <header class="bg-pink text-white py-5">
+        <div class="container text-center">
+            <h1 class="display-4">SAHABAT KOTA BOGOR</h1>
+            <p class="lead">Solusi untuk pengaduan kesehatan berbasis peta di Kota Bogor</p>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container text-center">
+            <h2>Kenapa SAHABAT?</h2>
+            <p>Dengan SAHABAT, Anda dapat melaporkan masalah kesehatan dengan cepat dan akurat. Sistem ini memanfaatkan teknologi GIS untuk memetakan lokasi rumah sakit dan aduan kesehatan.</p>
+        </div>
+    </section>
+
+    <section class="bg-light py-5">
+        <div class="container text-center">
+            <h2>Fitur Unggulan</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 feature-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Pengaduan Cepat</h5>
+                            <p class="card-text">Laporan kesehatan langsung dari peta.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 feature-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Rumah Sakit</h5>
+                            <p class="card-text">Lokasi rumah sakit di Kota Bogor yang mudah diakses.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 feature-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Terkini</h5>
+                            <p class="card-text">Dapatkan informasi terkini mengenai berita kesehatan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-pink text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 SAHABAT Sistem Aduan Kesehatan Bogor Tanggap</p>
+            <a href="home.php" class="btn btn-light">Lihat lebih lanjut</a>
+        </div>
+    </footer>
+
+    <!-- Link to Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
