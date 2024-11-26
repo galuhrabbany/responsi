@@ -392,7 +392,7 @@ fetch('data/jalanbogor.geojson') // Pastikan path ini benar
 
     // Default marker (blue)
     var defaultIcon = L.icon({
-        iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon.png', // Default marker icon
+        iconUrl: 'icon/icons.png', // Default marker icon
         iconSize: [25, 41],
         iconAnchor: [12, 41],
         popupAnchor: [1, -34],
