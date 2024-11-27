@@ -311,6 +311,36 @@
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
+    // Load the rumahsakit.geojson file
+fetch('data/rumahsakit.geojson') // Pastikan path file GeoJSON benar
+    .then(response => response.json())
+    .then(data => {
+        // Define a custom icon for hospitals
+        const hospitalIcon = L.icon({
+            iconUrl: 'icon/rs.png', // Path ke file ikon rumah sakit
+            iconSize: [32, 32], // Ukuran ikon [lebar, tinggi]
+            iconAnchor: [16, 32], // Titik jangkar (center bawah)
+            popupAnchor: [0, -28] // Posisi popup relatif terhadap ikon
+        });
+
+        // Add GeoJSON data for hospitals with custom icons and popup
+        L.geoJSON(data, {
+            pointToLayer: (feature, latlng) => {
+                // Use the custom icon for each hospital point
+                return L.marker(latlng, { icon: hospitalIcon });
+            },
+            onEachFeature: (feature, layer) => {
+                // Add a popup showing hospital name and additional properties
+                if (feature.properties && feature.properties.nama_rs) {
+                    layer.bindPopup(`<strong>Nama Rumah Sakit:</strong> ${feature.properties.nama_rs}<br>
+                    <strong>Alamat:</strong> ${feature.properties.Alamat || 'Tidak tersedia'}`);
+                }
+            }
+        }).addTo(map); // Add to the map instance
+    })
+    .catch(error => console.error('Error loading GeoJSON:', error));
+
+
      // Load the jalanbogor.geojson file
 fetch('data/jalanbogor.geojson') // Pastikan path ini benar
     .then(response => response.json())

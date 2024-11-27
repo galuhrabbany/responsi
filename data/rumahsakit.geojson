@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"name": "rumahsakit",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32748" } },
+"features": [
+{ "type": "Feature", "properties": { "nama_rs": "RS Umum Siloam Hospitals Bogor", "Alamat": "Jl. Raya Pajajaran No.27, Kota Bogor", "Latitude": -6.593261, "Longitude": 106.801849 }, "geometry": { "type": "Point", "coordinates": [ 106.801849, -6.593261 ] } },
+{ "type": "Feature", "properties": { "nama_rs": "RS Umum Azra", "Alamat": "Jl. Raya Pajajaran No.219, Kota Bogor", "Latitude": -6.585852, "Longitude": 106.810116 }, "geometry": { "type": "Point", "coordinates": [ 106.810116, -6.585852 ] } },
+{ "type": "Feature", "properties": { "nama_rs": "RS Umum Melania", "Alamat": "Jl. Pahlawan No.91, Kota Bogor", "Latitude": -6.622297, "Longitude": 106.809754 }, "geometry": { "type": "Point", "coordinates": [ 106.809754, -6.622297 ] } },
+{ "type": "Feature", "properties": { "nama_rs": "RS Jiwa dr. H. Marzoeki Mahdi", "Alamat": "Jl. Dr. Sumeru No.114, Kota Bogor", "Latitude": -6.594839, "Longitude": 106.797207 }, "geometry": { "type": "Point", "coordinates": [ 106.797207, -6.594839 ] } },
+{ "type": "Feature", "properties": { "nama_rs": "RS Umum Daerah Kota Bogor", "Alamat": "Jl. Dr. Sumeru No.120, Kota Bogor", "Latitude": -6.591887, "Longitude": 106.796872 }, "geometry": { "type": "Point", "coordinates": [ 106.796872, -6.591887 ] } },
+{ "type": "Feature", "properties": { "nama_rs": "RS Ummi", "Alamat": "Jl. Empang II No.2, Kota Bogor", "Latitude": -6.61119, "Longitude": 106.801135 }, "geometry": { "type": "Point", "coordinates": [ 106.801135, -6.61119 ] } },
+{ "type": "Feature", "properties": { "nama_rs": "RS Umum PMI Bogor", "Alamat": "Jl. Raya Pajajaran No.80, Kota Bogor", "Latitude": -6.588795, "Longitude": 106.810653 }, "geometry": { "type": "Point", "coordinates": [ 106.810653, -6.588795 ] } },
+{ "type": "Feature", "properties": { "nama_rs": "RS Islam Bogor", "Alamat": "Jl. Perdana Raya No.22, Kota Bogor", "Latitude": -6.603494, "Longitude": 106.782091 }, "geometry": { "type": "Point", "coordinates": [ 106.782091, -6.603494 ] } }
+]
+}
