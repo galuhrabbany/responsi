@@ -8,57 +8,120 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <style>
-/* Menambahkan background image pada section dengan class .bg-light */
-.bg-light {
-    background-image: url('img/bghealth.jpg'); /* Ganti dengan path gambar yang sesuai */
-    background-size: cover; /* Agar gambar menutupi seluruh area */
-    background-position: center; /* Agar gambar terpusat */
-    background-attachment: fixed; /* Agar gambar tetap di tempat saat scroll */
-}
+        /* Background image for the header */
+        .bg-light {
+            background-image: url('img/bghealth.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
 
-/* Custom CSS for pink theme */
-.bg-pink {
-    background-color: rgba(255, 179, 198, 0.9) !important;
-}
+        /* Pink background color */
+        .bg-pink {
+            background-color: rgba(255, 179, 198, 0.9) !important;
+        }
 
-.btn-light {
-    background-color: #ffe0f0;
-    color: #ff66b2;
-}
+        .btn-light {
+            background-color: #ffe0f0;
+            color: #ff66b2;
+            font-weight: bold;
+            padding: 12px 25px;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
 
-.btn-light:hover {
-    background-color: #ff99cc;
-}
+        .btn-light:hover {
+            background-color: #ff99cc;
+            transform: scale(1.05);
+        }
 
-footer {
-    background-color: rgba(255, 179, 198, 0.9);
-}
+        /* Card styling */
+        .feature-card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: #ffe0f0;
+            border: none;
+            border-radius: 12px;
+            transition: box-shadow 0.3s ease;
+        }
 
-h2, h5 {
-    color: #bc0061;
-}
+        .feature-card:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
 
-h1 {
-  color: #f8f5f7;  
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+        .feature-card .card-body {
+            flex-grow: 1;
+            text-align: center;
+            padding: 30px;
+        }
 
-.card-body {
-    background-color: #ffe0f0;
-}
+        .feature-card .card-body h5 {
+            color: #d63384;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
 
-/* Uniform card height */
-.feature-card {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
+        .feature-card .card-body p {
+            color: #6f42c1;
+        }
 
-.feature-card .card-body {
-    flex-grow: 1;
-}
+        /* Typography enhancements */
+        h1, h2 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+        }
 
-</style>
+        h1 {
+            color: #f8f5f7;
+            font-size: 3.5rem;
+        }
+
+        h2 {
+            color: #bc0061;
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+        }
+
+        h5 {
+            color: #bc0061;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: rgba(255, 179, 198, 0.9);
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        footer .btn {
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        footer .btn:hover {
+            background-color: #ff99cc;
+            transform: scale(1.05);
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .feature-card .card-body {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 <body class="bg-light">
 
@@ -108,7 +171,15 @@ h1 {
         </div>
     </section>
 
-    <footer class="bg-pink text-white py-4">
+    <section class="py-5">
+        <div class="container text-center">
+            <h2>Cek Data Pengaduan</h2>
+            <p>Anda dapat melihat daftar laporan kesehatan yang telah dikirimkan.</p>
+            <a href="data_pengaduan.php" class="btn btn-light btn-lg">Lihat Data Pengaduan</a>
+        </div>
+    </section>
+
+    <footer>
         <div class="container text-center">
             <p>&copy; 2024 SAHABAT Sistem Aduan Kesehatan Bogor Tanggap</p>
             <a href="home.php" class="btn btn-light">Lihat lebih lanjut</a>

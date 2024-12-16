@@ -62,7 +62,7 @@
 </head>
 <body>
     <div class="container">
-        <h3>Input Data Kesehatan</h3>
+        <h3>Input Pengaduan Kesehatan</h3>
         <form method="POST" action="">
             <div class="mb-3">
                 <label for="nama" class="form-label">Nama Lengkap</label>

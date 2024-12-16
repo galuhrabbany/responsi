@@ -103,7 +103,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <div class="container">
-        <h3>Edit Data Lokasi Kesehatan</h3>
+        <h3>Edit Data Pengaduan Kesehatan</h3>
         <form method="POST" action="">
             <div class="mb-3">
                 <label for="nama" class="form-label">Nama Lengkap</label>
