@@ -19,35 +19,40 @@
         }
 
         .navbar {
-            background-color: rgba(255, 179, 198, 0.9); /* Warna awal */
+            background-color: rgba(255, 179, 198, 0.9);
+            /* Warna awal */
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         .navbar:hover {
-            background-color: rgba(255, 179, 198, 1); /* Warna hover lebih pekat */
+            background-color: rgba(255, 179, 198, 1);
+            /* Warna hover lebih pekat */
         }
 
         .navbar .navbar-brand,
         .navbar .btn-custom {
-            color: #fff; /* Warna teks putih */
+            color: #fff;
+            /* Warna teks putih */
             font-weight: 600;
             transition: color 0.3s ease, background-color 0.3s ease;
         }
 
         .navbar:hover .navbar-brand,
         .navbar:hover .btn-custom {
-            color: #fff; /* Tetap putih saat hover */
+            color: #fff;
+            /* Tetap putih saat hover */
         }
 
         .btn-custom {
-            background-color: #FFB3C6; 
+            background-color: #FFB3C6;
             border: none;
         }
 
         .btn-custom:hover {
-            background-color: #f798cf; 
-            color: #fff; /* Warna teks tetap putih */
+            background-color: #f798cf;
+            color: #fff;
+            /* Warna teks tetap putih */
         }
 
         #container {
@@ -118,34 +123,122 @@
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
         }
 
+        /* Membuat Map dan Chart sejajar */
+        #map-container,
+        #chart-container {
+            background-color: #FFFFFF;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
         .row {
             display: flex;
             gap: 15px;
+            justify-content: space-between;
             flex-wrap: wrap;
         }
 
         .column {
             flex: 1;
             min-width: 300px;
+            /* Pastikan lebar kolom tetap minimal */
         }
 
+        /* Responsif - memastikan peta dan chart memiliki tinggi yang proporsional */
+        #map,
+        #chart {
+            width: 100%;
+            /* Membuat peta dan chart mengisi ruang kolom */
+            border-radius: 10px;
+        }
+
+        #map {
+            height: 100%;
+            max-height: 60vh;
+            /* Maksimal tinggi 60% dari layar */
+        }
+
+        #chart {
+            height: 100%;
+            max-height: 50vh;
+            /* Maksimal tinggi 50% dari layar */
+        }
+
+        /* Agar lebih responsif, pastikan peta dan chart bisa disesuaikan dalam kolom */
         @media (max-width: 768px) {
             .row {
                 flex-direction: column;
             }
+
+            #map {
+                max-height: 50vh;
+                /* Untuk layar kecil, map bisa lebih kecil */
+            }
+
+            #chart {
+                max-height: 40vh;
+                /* Chart sedikit lebih kecil */
+            }
         }
 
-        /* Enhanced list styling */
-        .list-group-item {
-            border: 1px solid #ddd;
-            background-color: #fff;
-            margin-bottom: 5px;
-            transition: background-color 0.3s ease;
+
+        /* Menambahkan beberapa efek hover untuk elemen lain */
+        .table tbody tr:hover {
+            background-color: #f5f5f5;
+            cursor: pointer;
         }
 
-        .list-group-item:hover {
-            background-color: #f8f9fa;
+        /* Styling untuk button custom */
+        .btn-custom {
+            background-color: #FFB3C6;
+            /* Warna latar belakang awal */
+            border: none;
+            color: #fff;
+            /* Warna teks putih */
+            font-weight: bold;
+            /* Teks lebih tebal */
+            font-size: 1rem;
+            /* Ukuran font lebih besar */
+            padding: 12px 24px;
+            /* Memberikan padding lebih besar untuk tombol */
+            border-radius: 25px;
+            /* Menjaga tombol agar lebih bulat */
+            text-align: center;
+            /* Menjaga teks di tengah */
+            transition: all 0.3s ease;
+            /* Transisi yang lebih halus */
+            display: inline-block;
+            /* Memastikan tombol tidak mengganggu layout */
+            cursor: pointer;
+            /* Mengubah cursor menjadi pointer saat hover */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            /* Menambahkan sedikit bayangan */
         }
+
+        /* Hover efek pada tombol */
+        .btn-custom:hover {
+            background-color: #f798cf;
+            /* Warna lebih terang saat hover */
+            color: #fff;
+            /* Teks tetap putih saat hover */
+            transform: translateY(-2px);
+            /* Efek angkat sedikit */
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+            /* Bayangan lebih kuat */
+        }
+
+        /* Fokus untuk tombol */
+        .btn-custom:focus {
+            outline: none;
+            /* Menghapus outline default pada fokus */
+            box-shadow: 0 0 5px 2px rgba(255, 179, 198, 0.7);
+            /* Bayangan saat fokus */
+        }
+
 
         /* Health Announcement Section */
         #health-announcement-container ul li {
@@ -195,6 +288,7 @@
             </div>
         </div>
     </div>
+
 
 
     <div id="container" class="container-fluid">
